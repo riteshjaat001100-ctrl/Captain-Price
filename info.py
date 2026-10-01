@@ -21,11 +21,11 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['5257865666'].split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['-1004451036277'].split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = environ.get('-1003318889045')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 TUTORIAL = "t.me/MainlandGroup_CC"
@@ -55,9 +55,9 @@ default_start_cap = """
 """
 
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('-1004370796371', ''))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/621f2c6491c0de7a31019.jpg https://te.legra.ph/file/749366baf5aa3261c5388.jpg https://te.legra.ph/file/bf6f3b0c90ac817fa5f48.jpg https://te.legra.ph/file/9c66d7fd10190ec8cc8b0.jpg https://te.legra.ph/file/2a0f093fd8fe39dd3c68c.jpg https://te.legra.ph/file/b98c5844bb601c722ca70.jpg')).split()
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MaX_Bots_Support')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Filmy_mod')
 IMDB = eval((environ.get('IMDB', "True")))
 P_TTTI_SHOW_OFF = eval((environ.get('P_TTTI_SHOW_OFF', "False")))
 BUTTON = environ.get("BUTTON",False)
